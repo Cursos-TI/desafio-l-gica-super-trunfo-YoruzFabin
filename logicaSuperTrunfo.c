@@ -1,20 +1,19 @@
 #include <stdio.h>
-#include <string.h>
 
 int main() {
     // Carta 1 - Rio de Janeiro (valores reais aproximados)
     char cidadeA[20] = "Rio de Janeiro";
     unsigned long populacaoA = 6211223;
-    float areaA = 1182.3f;              // km²
-    double pibA = 339700000000.0;       // R$
+    float areaA = 1182.3f;             
+    double pibA = 339700000000.0;   
 
     int pontos_turisticosA = 1000;
 
     // Carta 2 - Curitiba (valores reais aproximados)
     char cidadeB[20] = "Curitiba";
     unsigned long populacaoB = 1963726;
-    float areaB = 435.0f;               // km²
-    double pibB = 117000000000.0;       // R$
+    float areaB = 435.0f;               
+    double pibB = 117000000000.0;     
 
     int pontos_turisticosB = 300;
 
@@ -22,12 +21,12 @@ int main() {
     float densidadeA = populacaoA / areaA;
     float densidadeB = populacaoB / areaB;
 
-    // ------ Variáveis de controle (C89: declarar antes de usar) ------
+    // ------ Variáveis de controle ------
     int atributo1, atributo2;
     float valorA1 = 0.0f, valorB1 = 0.0f, valorA2 = 0.0f, valorB2 = 0.0f;
     char nome1[40], nome2[40];
     int menor_vence1 = 0, menor_vence2 = 0;
-    int i; // <<-- declarado fora do for (compatível com C89)
+    int i; 
 
     // ===== MENU 1 =====
     printf("\n===== Escolha o 1º atributo =====\n");
@@ -77,7 +76,7 @@ int main() {
     }
 
     // ===== Comparações individuais =====
-    // (maior vence; exceção: densidade -> menor vence)
+    
     int vencedor1 = 0, vencedor2 = 0;
 
     if (valorA1 != valorB1) {
